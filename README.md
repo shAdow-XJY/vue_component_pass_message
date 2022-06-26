@@ -2,7 +2,7 @@
     练习vue组件通信的demo项目，记录保存下来，以便回顾。
 
 ## website
-    [https://shadowplusing.website/vue_component_pass_message/](https://shadowplusing.website/vue_component_pass_message/)
+   [https://shadowplusing.website/vue_component_pass_message/](https://shadowplusing.website/vue_component_pass_message/)
 
 ## reference
 1. [vue3学习笔记之emit](https://juejin.cn/post/7026343868773875720)
