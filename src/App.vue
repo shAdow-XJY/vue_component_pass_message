@@ -4,7 +4,8 @@
   <br>
   <router-link :to="{name:'parentPage_emit'}">子组件传参给父组件——emit</router-link>
 
-  <router-view></router-view>
+  <router-view>
+  </router-view>
 </template>
 
 <script>

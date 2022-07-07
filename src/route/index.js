@@ -6,11 +6,6 @@ const routes = [
         redirect:'/parentPage_props'
     },
     {
-        path:'/homePage',
-        name:'homePage',
-        component: import('../App')
-    },
-    {
         path:'/parentPage_props',
         name:'parentPage_props',
         component: import('../v-bind+props/parentPage_props')
@@ -24,6 +19,7 @@ const routes = [
 
 const router = createRouter({
     history: createWebHashHistory(),
+    base: '/vue_component_pass_message/',
     routes: routes
 })
 
