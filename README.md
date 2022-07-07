@@ -4,6 +4,20 @@
 ## website
    [https://shadowplusing.website/vue_component_pass_message/](https://shadowplusing.website/vue_component_pass_message/)
 
+## debug
+   修复router-view打包后无法显示问题，主要是route的index.js里面写法出错问题。
+```
+    {
+        path:'/parentPage_emit',
+        name:'parentPage_emit',
+        component: () => import('../v-on+emit/parentPage_emit')
+    }
+```
+中的component之前写错成了
+```
+    component: import('../v-on+emit/parentPage_emit')
+```
+本地运行时正常的，但是打包后就会出错，因为这是用到router的懒加载，写法错了。
 ## reference
 1. [vue3学习笔记之emit](https://juejin.cn/post/7026343868773875720)
 2. [Vue3全局组件通信之EventBus](https://www.jianshu.com/p/d8d55d8f0c48)

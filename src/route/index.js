@@ -8,18 +8,17 @@ const routes = [
     {
         path:'/parentPage_props',
         name:'parentPage_props',
-        component: import('../v-bind+props/parentPage_props')
+        component: () => import('../v-bind+props/parentPage_props')
     },
     {
         path:'/parentPage_emit',
         name:'parentPage_emit',
-        component: import('../v-on+emit/parentPage_emit')
+        component: () => import('../v-on+emit/parentPage_emit')
     }
 ]
 
 const router = createRouter({
     history: createWebHashHistory(),
-    base: '/vue_component_pass_message/',
     routes: routes
 })
 
